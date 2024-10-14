@@ -17,10 +17,10 @@ public class Pet {
 	}
 	
 	private void setName(String petName) {
-		if (petName.isBlank() == false) {
-			this.name = petName;
-		} else {
+		if (petName.isBlank() || petName == null) {
 			throw new IllegalArgumentException("Name can't be empty!");
+		} else {
+			this.name = petName;
 		}
 	}
 	
