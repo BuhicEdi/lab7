@@ -5,8 +5,7 @@ public class TallyCounterLimit extends TallyCounterUndo {
 	private int limit;
 	
 	public TallyCounterLimit() {
-		super();
-		this.limit = Integer.MAX_VALUE;
+		this(Integer.MAX_VALUE);
 	}
 	
 	public TallyCounterLimit(int startLimit) {
