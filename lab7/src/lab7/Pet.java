@@ -25,8 +25,18 @@ public class Pet {
 	}
 	
 	private void setBirthYear(int birthYear) {
-		if (birthYear.length = 4 || birthYear >= LocalDate.now().getYear()) {
+		if (String.valueOf(birthYear).length() == 4 && LocalDate.now().getYear() >= birthYear) {
 			this.birthYear = birthYear;
+		} else {
+			throw new IllegalArgumentException("Invalid birth year!");
 		}
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getAge() {
+		return birthYear - LocalDate.now().getYear();
 	}
 }
