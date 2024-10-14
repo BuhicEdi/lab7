@@ -1,8 +1,8 @@
-package lab7.animals.pet;
+package lab7;
 
-import lab7.animals.Animals;
+import lab7.Pet;
 
-public class Cat extends Animals {
+public class Cat extends Pet {
 
 	private boolean indoor;
 	
