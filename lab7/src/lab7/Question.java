@@ -11,14 +11,14 @@ public class Question {
 	}
 	
 	public void setText(String question) {
-		question = question.trim();
-		question = question.replaceAll("\s+", " ");
-		question = question.replace('-', ' ');
-		
 		this.text = question;
 	}
 	
 	public void setAnswer(String answer) {
+		answer = answer.trim();
+		answer = answer.replaceAll("\s+", " ");
+		answer = answer.replace('-', ' ');
+		
 		this.answer = answer;
 	}
 	
