@@ -24,7 +24,7 @@ public class Dog extends Pet {
 	}
 	
 	public String getDescription() {
-		return "Pet: Cat, Name: " + super.getName() + ", Age: " + super.getAge() + ".";
+		return "Pet: Dog, Name: " + super.getName() + ", Age: " + super.getAge() + " Hunting Dog: " + hunting + "." ;
 	}
 	
 	public Boolean isHunting() {

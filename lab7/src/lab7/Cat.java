@@ -24,7 +24,7 @@ public class Cat extends Pet {
 	}
 	
 	public String getDescription() {
-		return "Pet: Cat, Name: " + super.getName() + ", Age: " + super.getAge() + ".";
+		return "Pet: Cat, Name: " + super.getName() + ", Age: " + super.getAge() + " Indoor Cat: " + indoor + ".";
 	}
 	
 	public Boolean isIndoor() {
