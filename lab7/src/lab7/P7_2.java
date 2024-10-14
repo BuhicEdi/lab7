@@ -14,7 +14,7 @@ public class P7_2 {
 		try {
 			TallyCounterLimit count = new TallyCounterLimit();
 			count.setLimit(-98);
-		} catch (IllegalArgumentException err) {
+		} catch (IllegalStateException err) {
 			System.out.println("Error setting new limit: " + err.getLocalizedMessage());
 		}
 	}
