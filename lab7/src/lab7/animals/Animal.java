@@ -2,16 +2,16 @@ package lab7.animals;
 
 import java.time.LocalDate;
 
-public class Animals {
+public class Animal {
 	
 	private String name = "";
 	private int birthYear;
 	
-	public Animals(String petName) {
+	public Animal(String petName) {
 		this(petName, LocalDate.now().getYear());
 	}
 	
-	public Animals(String petName, int birthYear) {
+	public Animal(String petName, int birthYear) {
 		this.setName(petName);
 		this.setBirthYear(birthYear);
 	}

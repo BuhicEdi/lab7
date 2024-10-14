@@ -1,8 +1,8 @@
 package lab7.animals.farm;
 
-import lab7.animals.Animals;
+import lab7.animals.Animal;
 
-public class Cow extends Animals {
+public class Cow extends Animal {
 	private int id;
 	
 	public Cow(int id, int birthYear) {
