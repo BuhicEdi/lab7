@@ -17,7 +17,7 @@ public class Pet {
 	}
 	
 	private void setName(String petName) {
-		if (petName.length() > 0 || petName == null) {
+		if (petName.isBlank() == false) {
 			this.name = petName;
 		} else {
 			throw new IllegalArgumentException("Name can't be empty!");
