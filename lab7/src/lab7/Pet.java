@@ -37,6 +37,6 @@ public class Pet {
 	}
 	
 	public int getAge() {
-		return birthYear - LocalDate.now().getYear();
+		return LocalDate.now().getYear() - birthYear;
 	}
 }
