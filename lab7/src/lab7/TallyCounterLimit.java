@@ -12,7 +12,7 @@ public class TallyCounterLimit extends TallyCounterUndo {
 	public TallyCounterLimit(int startLimit) {
 		super();
 		
-		if (limit > 0) {
+		if (startLimit > 0) {
 			this.limit = startLimit;
 		} else {
 			throw new IllegalArgumentException("Limit can't be negative!");
