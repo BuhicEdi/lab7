@@ -20,7 +20,7 @@ public class Dog extends Pet {
 	}
 	
 	public String makeSound() {
-		return "Mjau, mjau";
+		return "Vov, vov";
 	}
 	
 	public String getDescription() {
