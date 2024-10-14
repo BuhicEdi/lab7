@@ -20,7 +20,7 @@ public class TallyCounterLimit extends TallyCounterUndo {
 	}
 	
 	public void count() {
-		if (this.counter < limit) {
+		if (super.counter < limit) {
 			super.count();
 		} else {
 			throw new IllegalStateException("Limit is reached!");
