@@ -1,4 +1,6 @@
-package lab7;
+package lab7.animals.pet;
+
+import lab7.Pet;
 
 public class Dog extends Pet {
 
