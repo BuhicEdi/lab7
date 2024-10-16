@@ -14,8 +14,11 @@ public class MultiChoiceQuestion extends Question {
 	}
 	
 	public Boolean checkAnswer(int input) {
-		return isTrue[input - 1];
+		return isTrue[input];
 	}
 	
+	public String toString() {
+		return null;
+	}
 	
 }
