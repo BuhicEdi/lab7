@@ -4,7 +4,7 @@ public class MultiChoiceQuestion extends Question {
 
 	String[] alternatives = new String[11];
 	Boolean[] isTrue = new Boolean[11];
-	int totalAlternatives = 0;
+	int totalAlternatives = 1;
 	
 	
 	public void addChoice(String alt, boolean isTrue) {
@@ -16,8 +16,8 @@ public class MultiChoiceQuestion extends Question {
 	public boolean checkAnswer(String input) {
 		input.replaceAll("\s", "");
 		
-		for (int i = 1; 0 < input.length(); i++) {
-			if (isTrue[i - 1] == false) {
+		for (int i = 1; i < input.length(); i++) {
+			if (isTrue[i] == false) {
 				return false;
 			}
 		}
