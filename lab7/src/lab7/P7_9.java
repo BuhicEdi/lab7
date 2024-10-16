@@ -15,7 +15,7 @@ public class P7_9 {
 		System.out.println(question.toString());
 		System.out.print("Your answer: ");
 		Scanner answerInput = new Scanner(System.in);
-		System.out.println(question.checkAnswer(answerInput.nextInt()));
+		System.out.println(question.checkAnswer(answerInput.nextLine()));
 		answerInput.close();
 
 		
