@@ -1,28 +1,30 @@
 package lab7;
 
+import java.util.Arrays;
+
 public class MultiChoiceQuestion extends Question {
 
-	String[] alternatives = new String[11];
-	Boolean[] isTrue = new Boolean[11];
-	int totalAlternatives = 0;
+	String[] alternatives = new String[10];
+	int[] isTrue = new int[10];
+	int totalAlternatives = 1;
 	
 	
 	public void addChoice(String alt, boolean isTrue) {
-		this.alternatives[totalAlternatives] = alt;
-		this.isTrue[totalAlternatives] = isTrue;
+		alternatives[totalAlternatives - 1] = alt;
+		
+		if (isTrue = true) {
+			this.isTrue[totalAlternatives - 1] = totalAlternatives;
+		}
 		totalAlternatives++;
 	}
 	
 	public boolean checkAnswer(String input) {
-		String[] nextInt = input.split("\s");
+		String inpAns = input.replaceAll("\s", "");
 		
-		for (int i = 0; i < nextInt.length; i++) {
-			if (isTrue[Integer.parseInt(nextInt[i])] == false) {
-				return false;
-			}
+		if (inpAns.contains(Arrays.toString(isTrue))) {
+			return true;
 		}
-		
-		return true;
+		return false;
 	}
 	
 	public String toString() {
