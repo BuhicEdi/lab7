@@ -14,9 +14,15 @@ public class MultiChoiceQuestion extends Question {
 	}
 	
 	public boolean checkAnswer(String input) {
-		int alt = Integer.parseInt(input);
+		input.replaceAll("\s", "");
 		
-		return isTrue[alt];
+		for (int i = 0; 0 < input.length(); i++) {
+			if (isTrue[i] == false) {
+				return false;
+			}
+		}
+		
+		return true;
 	}
 	
 	public String toString() {
