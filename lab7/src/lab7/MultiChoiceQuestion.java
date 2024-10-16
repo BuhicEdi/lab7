@@ -21,7 +21,7 @@ public class MultiChoiceQuestion extends Question {
 	public boolean checkAnswer(String input) {
 		String inpAns = input.replaceAll("\s", "");
 		
-		if (inpAns.contains(Arrays.toString(isTrue))) {
+		if (Arrays.toString(isTrue).contains(inpAns)) {
 			return true;
 		}
 		return false;
