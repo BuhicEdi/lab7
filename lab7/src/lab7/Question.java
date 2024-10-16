@@ -27,6 +27,10 @@ public class Question {
 	}
 	
 	public boolean checkAnswer(String response) {
+		response = response.trim();
+		response = response.replaceAll("\s+", " ");
+		response = response.replace('-', ' ');
+		
 		return response.equalsIgnoreCase(answer);
 	}
 	
