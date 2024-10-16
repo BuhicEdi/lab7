@@ -2,8 +2,8 @@ package lab7;
 
 public class MultiChoiceQuestion extends Question {
 
-	String[] alternatives = new String[10];
-	Boolean[] isTrue = new Boolean[10];
+	String[] alternatives = new String[11];
+	Boolean[] isTrue = new Boolean[11];
 	int totalAlternatives = 0;
 	
 	
@@ -13,8 +13,10 @@ public class MultiChoiceQuestion extends Question {
 		totalAlternatives++;
 	}
 	
-	public Boolean checkAnswer(int input) {
-		return isTrue[input];
+	public boolean checkAnswer(String input) {
+		int alt = Integer.parseInt(input);
+		
+		return isTrue[alt];
 	}
 	
 	public String toString() {
