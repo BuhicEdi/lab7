@@ -1,6 +1,6 @@
 package lab7;
 
-public class MultiChoiseQuestion extends Question {
+public class MultiChoiceQuestion extends Question {
 
 	String[] alternatives = new String[10];
 	Boolean[] isTrue = new Boolean[10];
