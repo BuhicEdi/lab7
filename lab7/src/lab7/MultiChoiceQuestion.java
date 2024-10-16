@@ -16,7 +16,7 @@ public class MultiChoiceQuestion extends Question {
 	public boolean checkAnswer(String input) {
 		input.replaceAll("\s", "");
 		
-		for (int i = 0; 0 < input.length(); i++) {
+		for (int i = 1; 0 < input.length(); i++) {
 			if (isTrue[i - 1] == false) {
 				return false;
 			}
