@@ -17,7 +17,7 @@ public class MultiChoiceQuestion extends Question {
 		input.replaceAll("\s", "");
 		
 		for (int i = 0; 0 < input.length(); i++) {
-			if (isTrue[i] == false) {
+			if (isTrue[i - 1] == false) {
 				return false;
 			}
 		}
