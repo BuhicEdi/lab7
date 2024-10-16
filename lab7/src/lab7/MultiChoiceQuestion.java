@@ -4,7 +4,7 @@ public class MultiChoiceQuestion extends Question {
 
 	String[] alternatives = new String[11];
 	Boolean[] isTrue = new Boolean[11];
-	int totalAlternatives = 1;
+	int totalAlternatives = 0;
 	
 	
 	public void addChoice(String alt, boolean isTrue) {
