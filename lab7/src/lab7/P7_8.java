@@ -7,7 +7,7 @@ public class P7_8 {
 		
 		q.setText("SHLs gud heter _Jakob Silfverberg_");
 		
-		System.out.println(q.getAnswer());
+		System.out.println("Answer: " + q.getAnswer());
 		
 		
 		

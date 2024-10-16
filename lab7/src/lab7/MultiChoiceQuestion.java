@@ -10,7 +10,7 @@ public class MultiChoiceQuestion extends Question {
 	public void addChoice(String alt, boolean isTrue) {
 		this.alternatives[totalAlternatives] = alt;
 		this.isTrue[totalAlternatives] = isTrue;
-		
+		totalAlternatives++;
 	}
 	
 	public Boolean checkAnswer(int input) {
