@@ -24,9 +24,12 @@ public class MultiChoiceQuestion extends Question {
 
 	public boolean checkAnswer(String input) {
 		String inpAns = input.replaceAll("\s", "");
+		String[] inpAns2 = inpAns.split("|");
 
-		for (int i = 0; i < inpAns.length(); i++) {
-
+		for (int i = 0; i < inpAns2.length; i++) {
+			if (Integer.parseInt(inpAns2[i]) != isTrue[i]) {
+				return false;
+			}
 		}
 
 		return true;
@@ -35,5 +38,4 @@ public class MultiChoiceQuestion extends Question {
 	public String toString() {
 		return super.toString();
 	}
-
 }
