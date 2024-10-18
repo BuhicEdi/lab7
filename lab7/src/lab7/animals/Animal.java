@@ -9,7 +9,7 @@ import java.time.LocalDate;
  */
 
 public class Animal {
-	
+
 	// Klassattribut
 	private String name = "";
 	private int birthYear;

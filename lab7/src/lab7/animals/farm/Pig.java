@@ -26,6 +26,6 @@ public class Pig extends Animal{
 
 	// Metod som returnerar en full beskrivning av djuret
 	public String getDescription() {
-		return "Pet: Pig, Name: " + id + ", Age: " + super.getAge() + ".";
+		return "Pet: Pig, ID: " + id + ", Age: " + super.getAge() + ".";
 	}
 }

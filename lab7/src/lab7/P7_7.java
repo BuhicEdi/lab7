@@ -1,5 +1,10 @@
 package lab7;
-
+/**
+ * Detta program testar klassen NumericQuestion.
+ * 
+ * @author Edi Buhic
+ * @version 2024-10-18
+ */
 
 public class P7_7 {
 

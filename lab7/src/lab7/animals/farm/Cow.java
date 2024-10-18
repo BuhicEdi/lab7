@@ -26,6 +26,6 @@ public class Cow extends Animal {
 
 	// Metod som returnerar en full beskrivning av kossan
 	public String getDescription() {
-		return "Pet: Cow, Name: " + id + ", Age: " + super.getAge() + ".";
+		return "Pet: Cow, ID: " + id + ", Age: " + super.getAge() + ".";
 	}
 }

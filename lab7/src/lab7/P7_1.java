@@ -1,6 +1,6 @@
 package lab7;
 /**
- * Program som testar klassen TallyCounterUndo
+ * Program som testar klassen TallyCounterUndo.
  * 
  * @author Edi Buhic
  * @version 2024-10-18
@@ -17,6 +17,5 @@ public class P7_1 {
 
 		count.undo();
 		System.out.println(count.getValue());
-
 	}
 }
